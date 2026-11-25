@@ -1,0 +1,8 @@
+.venv
+runtime
+**/__pycache__
+**/*.zip
+notebook/.ipynb_checkpoints
+results
+.git
+*.md

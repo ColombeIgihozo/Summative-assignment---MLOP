@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>BeanLeaf Doctor</title>
+  <link rel="stylesheet" href="/assets/styles.css?v=2">
+  <script src="/assets/chart.umd.min.js"></script>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <div class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="28" height="28">
+            <path fill="#d8efe0" d="M16 3c2 6 2 10 0 16 6-2 10-2 14 0-4 2-8 6-10 12-2-6-6-10-12-12 5 1 9-1 8-16z"/>
+          </svg>
+        </span>
+        <div>
+          <strong>BeanLeaf Doctor</strong>
+          <small>Field diagnosis for common bean diseases</small>
+        </div>
+      </div>
+      <nav>
+        <button type="button" data-panel="diagnose" class="active">Diagnose a leaf</button>
+        <button type="button" data-panel="insights">What the photos show</button>
+        <button type="button" data-panel="retrain">Upload and retrain</button>
+        <button type="button" data-panel="monitor">Model uptime</button>
+      </nav>
+      <div class="aside-status">
+        <span id="status-dot" class="dot"></span>
+        <div>
+          <strong id="status-label">Checking the model</strong>
+          <small id="uptime">Uptime —</small>
+        </div>
+      </div>
+    </aside>
+
+    <main>
+      <section id="diagnose" class="panel active">
+        <header class="panel-head">
+          <p class="eyebrow">Prediction</p>
+          <h1>Score one leaf photograph</h1>
+          <p>Upload a field photo, or start from a labelled test leaf. The model returns one of three classes: angular leaf spot, bean rust, or healthy.</p>
+        </header>
+        <div class="split">
+          <div class="card">
+            <div id="drop" class="drop" tabindex="0">
+              <input id="leaf-file" type="file" accept="image/*">
+              <p><strong>Drop a leaf photo</strong> or click to browse</p>
+              <small>JPG or PNG, one image, up to 8 MB</small>
+            </div>
+            <img id="preview" class="preview" alt="Selected leaf" hidden>
+            <div class="sample-block">
+              <p class="label">Known test leaves</p>
+              <div id="samples" class="samples"></div>
+            </div>
+          </div>
+          <div class="card result-card">
+            <p class="label">Result</p>
+            <div id="result-empty" class="empty">The prediction will appear here.</div>
+            <div id="result" hidden>
+              <p id="expected" class="expected" hidden></p>
+              <h2 id="pred-label"></h2>
+              <p id="pred-confidence" class="confidence"></p>
+              <div id="bars"></div>
+              <p id="advice" class="advice"></p>
+              <dl id="pred-features" class="feature-list"></dl>
+              <p id="pred-meta" class="meta"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="insights" class="panel">
+        <header class="panel-head">
+          <p class="eyebrow">Visualisations</p>
+          <h1>Three signals hiding in the photographs</h1>
+          <p>Before the network runs, each photo is reduced to colour and texture measurements. These are not the pixels themselves. They are the clues a scout can see: how green the leaf is, how much red the rust adds, and how broken-up the surface looks.</p>
+        </header>
+        <div id="stories" class="story-grid"></div>
+        <div class="card chart-card">
+          <h2>Green share against rust index</h2>
+          <p id="scatter-caption" class="meta">Each point is one training leaf.</p>
+          <canvas id="scatter" height="120"></canvas>
+        </div>
+      </section>
+
+      <section id="retrain" class="panel">
+        <header class="panel-head">
+          <p class="eyebrow">Retraining</p>
+          <h1>Teach the saved model with new leaves</h1>
+          <p>Uploads are stored on disk and recorded in SQLite. Retraining does not start from scratch: it loads the custom model already trained for this project and fine-tunes it. An automatic trigger starts that job once enough new leaves are waiting.</p>
+        </header>
+        <div class="split">
+          <form id="upload-form" class="card form">
+            <label for="class-label">Class of these photos</label>
+            <select id="class-label" name="label">
+              <option value="angular_leaf_spot">Angular leaf spot</option>
+              <option value="bean_rust">Bean rust</option>
+              <option value="healthy">Healthy</option>
+            </select>
+            <label for="bulk-files">Leaf images</label>
+            <input id="bulk-files" name="files" type="file" accept="image/*" multiple>
+            <label for="bulk-zip">Or a zip of class folders</label>
+            <input id="bulk-zip" name="archive" type="file" accept=".zip,application/zip">
+            <button type="submit" class="primary">Save for retraining</button>
+            <p id="upload-message" class="meta"></p>
+          </form>
+          <div class="card">
+            <p class="label">Trigger</p>
+            <div class="meter"><span id="meter-fill"></span></div>
+            <p id="meter-text" class="meta">Waiting for uploads.</p>
+            <button id="retrain-button" type="button" class="primary">Retrain on uploaded leaves</button>
+            <p id="run-message" class="advice"></p>
+            <div id="run-history"></div>
+          </div>
+        </div>
+        <div class="card">
+          <h2>Upload register</h2>
+          <div class="table-wrap">
+            <table>
+              <thead>
+                <tr><th>File</th><th>Class</th><th>Source</th><th>Status</th><th>Saved</th></tr>
+              </thead>
+              <tbody id="upload-rows">
+                <tr><td colspan="5">No uploads yet.</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section id="monitor" class="panel">
+        <header class="panel-head">
+          <p class="eyebrow">Production</p>
+          <h1>Is the model up, and how good is it?</h1>
+          <p>The held-out test set is scored with accuracy, loss, precision, recall, F1, and AUC. Those numbers are what the running service is currently serving.</p>
+        </header>
+        <div id="metric-tiles" class="tiles"></div>
+        <div class="split">
+          <div class="card">
+            <h2>Confusion matrix</h2>
+            <p class="meta">Rows are the true class. Columns are the prediction.</p>
+            <div id="matrix"></div>
+            <button id="refresh-eval" type="button" class="ghost">Score the test set again</button>
+            <p id="eval-message" class="meta"></p>
+          </div>
+          <div class="card">
+            <h2>Recent requests</h2>
+            <div id="recent"></div>
+            <p class="meta">Interactive API docs live at <a href="/docs">/docs</a>.</p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+  <script src="/assets/app.js?v=2"></script>
+</body>
+</html>

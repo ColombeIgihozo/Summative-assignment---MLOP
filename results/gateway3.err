@@ -1,0 +1,378 @@
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49425)
+Exception occurred during processing of request from ('127.0.0.1', 49424)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 65147)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61947)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61945)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61949)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49736)
+Exception occurred during processing of request from ('127.0.0.1', 61928)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49737)
+Traceback (most recent call last):
+----------------------------------------
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+Exception occurred during processing of request from ('127.0.0.1', 61929)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+----------------------------------------
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 65145)
+Exception occurred during processing of request from ('127.0.0.1', 61914)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61913)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 65144)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------
+----------------------------------------
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49423)
+Exception occurred during processing of request from ('127.0.0.1', 49735)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 61946)
+Traceback (most recent call last):
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+----------------------------------------
+Exception occurred during processing of request from ('127.0.0.1', 49738)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+Traceback (most recent call last):
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 691, in process_request_thread
+    self.finish_request(request, client_address)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 361, in finish_request
+    self.RequestHandlerClass(request, client_address, self)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+----------------------------------------
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 755, in __init__
+    self.handle()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 442, in handle
+    self.handle_one_request()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 52, in do_GET
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\http\server.py", line 428, in handle_one_request
+    method()
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 55, in do_POST
+    self._forward()
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+----------------------------------------
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+  File "C:\Users\EVOTECH\Downloads\Summative pipeline\deploy\process_gateway.py", line 49, in _forward
+    self.wfile.write(payload)
+----------------------------------------
+  File "C:\Users\EVOTECH\AppData\Roaming\uv\python\cpython-3.11-windows-x86_64-none\Lib\socketserver.py", line 834, in write
+    self._sock.sendall(b)
+ConnectionAbortedError: [WinError 10053] An established connection was aborted by the software in your host machine
+----------------------------------------

@@ -1,0 +1,7 @@
+tensorflow==2.17.1
+pillow==10.4.0
+numpy==1.26.4
+scikit-learn==1.5.2
+fastapi==0.115.5
+uvicorn==0.32.1
+python-multipart==0.0.17

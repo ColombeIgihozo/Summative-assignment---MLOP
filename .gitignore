@@ -1,0 +1,10 @@
+.venv/
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+runtime/
+data/incoming/
+data/zips/
+*.zip
+.DS_Store
+Thumbs.db
