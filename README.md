@@ -128,7 +128,7 @@ Locust posts a real test photograph to `/api/predict` and also calls `/api/healt
 
 ### Cloud
 
-The service is a Docker web app. On [Render](https://render.com), create a new Blueprint from `render.yaml` or a new Web Service with the Docker runtime, then set the health check path to `/api/health`. The free instance is too small for TensorFlow. Use a starter instance with at least 2 GB of RAM. After deploy, put the public URL in the URL section above.
+The service is a Docker web app. On [Render](https://render.com), create a new Blueprint from `render.yaml` or a new Web Service with the Docker runtime, then set the health check path to `/api/health`. The free and starter instances have 512 MB of RAM, which is too small for TensorFlow. `render.yaml` uses the standard plan, which has 2 GB. After deploy, put the public URL in the URL section above.
 
 The same image runs on any host that has Docker:
 

@@ -2,7 +2,7 @@ services:
   - type: web
     name: beanleaf-doctor
     runtime: docker
-    plan: starter
+    plan: standard
     healthCheckPath: /api/health
     envVars:
       - key: AUTO_RETRAIN
