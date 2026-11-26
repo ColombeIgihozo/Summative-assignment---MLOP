@@ -14,9 +14,7 @@ Record this with your camera on and upload it to YouTube. The recording needs to
 4. On **Upload and retrain**, add at least six labelled leaf images and press **Retrain on uploaded leaves**. Leave the camera on until the run status changes to completed.
 5. Diagnose one of the known test leaves again.
 
-Paste the finished video here:
-
-**YouTube:** https://www.youtube.com/watch?v=REPLACE_WITH_YOUR_VIDEO
+**YouTube:** https://www.youtube.com/watch?v=SvfuWz_IN-g
 
 ## URL
 
