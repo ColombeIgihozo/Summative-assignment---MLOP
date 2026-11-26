@@ -6,13 +6,6 @@ The photographs were collected in Uganda by the Makerere AI Lab with the Nationa
 
 ## Video demo
 
-Record this with your camera on and upload it to YouTube. The recording needs to show both a prediction and a retraining run.
-
-1. Open the app and point at the uptime indicator.
-2. On **Diagnose a leaf**, click a known test leaf and show that the predicted class matches the button label. Then upload one photo of your own.
-3. On **What the photos show**, scroll through the three feature charts.
-4. On **Upload and retrain**, add at least six labelled leaf images and press **Retrain on uploaded leaves**. Leave the camera on until the run status changes to completed.
-5. Diagnose one of the known test leaves again.
 
 **YouTube:** https://www.youtube.com/watch?v=SvfuWz_IN-g
 
