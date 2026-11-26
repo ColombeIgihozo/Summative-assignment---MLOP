@@ -24,9 +24,9 @@ Paste the finished video here:
 | --- | --- |
 | Local web app and API | http://localhost:8000 |
 | Interactive API docs | http://localhost:8000/docs |
-| Cloud | Deploy with the steps below, then replace this cell with the public URL. |
+| Cloud | https://summative-assignment-mlop-production.up.railway.app |
 
-**Public URL:** https://REPLACE_WITH_YOUR_DEPLOYED_URL
+**Public URL:** https://summative-assignment-mlop-production.up.railway.app
 
 ## What the project does
 
@@ -128,7 +128,9 @@ Locust posts a real test photograph to `/api/predict` and also calls `/api/healt
 
 ### Cloud
 
-The service is a Docker web app. On [Render](https://render.com), create a new Blueprint from `render.yaml` or a new Web Service with the Docker runtime, then set the health check path to `/api/health`. The free and starter instances have 512 MB of RAM, which is too small for TensorFlow. `render.yaml` uses the standard plan, which has 2 GB. After deploy, put the public URL in the URL section above.
+The service is a Docker web app. It is deployed on Railway and stays up at https://summative-assignment-mlop-production.up.railway.app. The public domain forwards to port 8000, the health check path is `/api/health`, and the service variable `PORT` is `8000` so the container listens on the same port. `railway.toml` sets that health check and a 300 second startup timeout, because TensorFlow takes a while to load.
+
+A 512 MB instance is too small for TensorFlow. This deployment needs at least 1 GB of RAM. `render.yaml` is an alternate host file for Render's standard plan (2 GB) if the project is moved later.
 
 The same image runs on any host that has Docker:
 
